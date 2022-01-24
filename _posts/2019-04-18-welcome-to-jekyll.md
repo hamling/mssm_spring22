@@ -14,12 +14,22 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+```cpp
+struct my_promise_type
+{
+  void* operator new(std::size_t size)
+  {
+    void* ptr = my_custom_allocate(size);
+    if (!ptr) throw std::bad_alloc{};
+    return ptr;
+  }
+
+  void operator delete(void* ptr, std::size_t size)
+  {
+    my_custom_free(ptr, size);
+  }
+  ...
+};
 ```
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].

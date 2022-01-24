@@ -1,0 +1,14 @@
+{
+  "name": "publisher",
+  "version": "1.0.0",
+  "description": "Process c++ projects to generate source for jekyll",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Greg Hamlin",
+  "license": "ISC",
+  "dependencies": {
+    "directory-tree": "^3.0.1"
+  }
+}
