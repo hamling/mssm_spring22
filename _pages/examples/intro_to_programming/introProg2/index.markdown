@@ -1,5 +1,5 @@
 ---
-permalink: /examples/intro_to_programming/introProg2
+permalink: /examples/intro_to_programming/introProg2/
 
 ...
 # folders

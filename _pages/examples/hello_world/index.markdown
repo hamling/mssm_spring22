@@ -1,5 +1,5 @@
 ---
-permalink: /examples/hello_world
+permalink: /examples/hello_world/
 
 ...
 # folders

@@ -1,5 +1,5 @@
 ---
-permalink: /examples/data_structures/dataStructures1
+permalink: /examples/data_structures/dataStructures1/
 
 ...
 # folders

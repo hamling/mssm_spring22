@@ -73,13 +73,13 @@ function processFolder(folder, permaPath) {
     console.log(subDirs);
 
     let indexFileName = path.join(outputPath, "index.markdown");
-    let indexContents = "---\npermalink: " + permaPath + "\n";
+    let indexContents = "---\npermalink: " + permaPath + "/\n";
     indexContents += "\n...\n";
 
     indexContents += "# folders\n\n";
     
     for (let sub of subDirs) {
-        indexContents += "["  + sub.name + "](/mssm_spring22" + sub.permaPath + ")\n\n";
+        indexContents += "["  + sub.name + "](/mssm_spring22" + sub.permaPath + "/)\n\n";
     }
 
     indexContents += "# files\n\n";
