@@ -1,5 +1,5 @@
 const path = require('path');
-const dirTree = require('directory-tree');
+const url = require('url');
 
 const fs = require('fs');
 
@@ -11,6 +11,13 @@ let ignoreFolders = [ "build", ".git" ];
 function changeExtension(file, extension) {
     const basename = path.basename(file, path.extname(file))
     return path.join(path.dirname(file), basename + extension)
+}
+
+function cleanUrl(path) 
+{
+    let withDrive = url.pathToFileURL(path).pathname;
+    let colonPos = withDrive.indexOf(":");
+    return withDrive.substring(colonPos+1);
 }
 
 function processFolder(folder, permaPath) {
@@ -57,7 +64,7 @@ function processFolder(folder, permaPath) {
             let filePermaPath = path.join(permaPath, file);
             if (path.extname(file) === '.cpp') {
                 let frontMatter = "---\n";
-                let fpp = changeExtension(filePermaPath, "_cpp.html");
+                let fpp = cleanUrl(changeExtension(filePermaPath, "_cpp.html"));
                 frontMatter += "permalink: " + fpp + "\n";
                 frontMatter = frontMatter + "---\n";
                 frontMatter += "```cpp\n";
