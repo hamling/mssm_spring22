@@ -8,5 +8,5 @@ permalink: /examples/data_structures/
 
 # files
 
-[test.cpp](/mssm_spring22\examples\data_structures\test_cpp.html)
+[test.cpp](/mssm_spring22/examples/data_structures/test_cpp.html)
 

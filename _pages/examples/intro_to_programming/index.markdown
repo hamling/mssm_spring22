@@ -10,5 +10,5 @@ permalink: /examples/intro_to_programming/
 
 # files
 
-[whatever.cpp](/mssm_spring22\examples\intro_to_programming\whatever_cpp.html)
+[whatever.cpp](/mssm_spring22/examples/intro_to_programming/whatever_cpp.html)
 

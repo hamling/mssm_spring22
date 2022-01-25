@@ -6,5 +6,5 @@ permalink: /examples/hello_world/
 
 # files
 
-[main.cpp](/mssm_spring22\examples\hello_world\main_cpp.html)
+[main.cpp](/mssm_spring22/examples/hello_world/main_cpp.html)
 

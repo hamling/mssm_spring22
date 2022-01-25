@@ -6,5 +6,5 @@ permalink: /examples/data_structures/dataStructures1/
 
 # files
 
-[subThing.cpp](/mssm_spring22\examples\data_structures\dataStructures1\subThing_cpp.html)
+[subThing.cpp](/mssm_spring22/examples/data_structures/dataStructures1/subThing_cpp.html)
 

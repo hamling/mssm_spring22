@@ -1,5 +1,5 @@
 ---
-permalink: \examples\intro_to_programming\whatever_cpp.html
+permalink: /examples/intro_to_programming/whatever_cpp.html
 ---
 ```cpp
 #include <iostream>
